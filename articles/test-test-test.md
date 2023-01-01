@@ -8,6 +8,8 @@ published: true # 公開設定（falseにすると下書き）
 
 [link](https://zenn.dev/)[:target="_blank"]
 
-<a href="https://zenn.dev/" target="_blank">zenn</a>
+<a href="https://zenn.dev/darcy/articles/" target="_blank">https://zenn.dev/darcy/articles/</a>
+
+[zenn](https://zenn.dev/darcy/articles/)
 
 # 見いだし1
