@@ -7,6 +7,7 @@ published: true # 公開設定（falseにすると下書き）
 ---
 
 [link](https://zenn.dev/)[:target="_blank"]
-<a href="https://sample.com/" target="_blank">アンカーテキスト</a>
+
+<a href="https://zenn.dev/" target="_blank">zenn</a>
 
 # 見いだし1
