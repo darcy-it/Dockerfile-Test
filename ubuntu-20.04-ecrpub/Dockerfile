@@ -3,12 +3,12 @@
 #
 FROM ubuntu:20.04
 
-RUN apt update
-RUN sudo apt-get update && upgrade
-RUN sudo apt-get install \
-    git \
-    vim \
-    -y
+# RUN apt update
+# RUN sudo apt-get update && upgrade
+# RUN sudo apt-get install \
+#     git \
+#     vim \
+#     -y
 
 # COPY
 
