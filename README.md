@@ -2,7 +2,8 @@
 ~~~
 git config -l
 ~~~
-https://github.com/darcy-it/docker-container.git
+- https://github.com/darcy-it/docker-container.git
+-- for update.
 
 # Docker command
 
