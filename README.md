@@ -2,6 +2,7 @@
 
 ## ubuntu22.04
 ```
+sudo docker images
 sudo docker image build -t ubuntu/only:22.04 --no-cache .
 ```
 
