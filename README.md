@@ -7,7 +7,7 @@ git config -l
 
 # Docker command
 
-## ubuntu22.04
+## ubuntu20.04
 ```
 sudo docker image build -t ubuntu/only:20.04 --no-cache .
 sudo docker images
