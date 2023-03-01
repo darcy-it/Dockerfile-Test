@@ -1,0 +1,18 @@
+FROM amazonlinux:2
+
+# OpenSSH Serverのインストール
+RUN yum update -y && \
+    yum install -y openssh-server && \
+    yum clean all && \
+    rm -rf /var/cache/yum/*
+
+# ユーザーの追加と設定
+RUN useradd -m -d /home/user -s /bin/bash user && \
+    echo 'user:password' | chpasswd && \
+    sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config && \
+    sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config && \
+    sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config && \
+    echo "export VISIBLE=now" >> /etc/profile
+
+# SSH Serverの起動
+CMD ["/usr/sbin/sshd", "-D"]
